@@ -1,18 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Primer Sitio Web Profesional</title>
 	<!--iconos font-awesome-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--slider-->
+	<!--enlaces para el slider-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 	<!--hoja de estilos-->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-	
+
+	<div id="wrapper">
+		<!--seccion BANNER-->
+		<div class="banner-wapper">
+			<!--encabezado del banner-->
+			<header>
+				<div class="header-inner">
+					<a href="#" id="logo">
+						<img src="img/fazt_logo.png" alt="logo del sitio web de Fazt">
+					</a>
+					<!--barra de navegacion del Header-->
+					<nav>
+						<a href="" id="menu-icon">
+							<i class="fa fa-bars"></i>
+						</a>
+						<ul>
+							<li><a href="#index.html">Inicio</a></li>
+							<li><a href="#skills.html">Habilidades</a></li>
+							<li><a href="#portfolio.html">Portafolio</a></li>
+							<li><a href="#services.html">Servicios</a></li>
+							<li><a href="#contac.html">Contactos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<!--seccion del SLIDER-->
+			<!-- paso 1: agregar las img del slider-->
+			<section class="slide-wrap">
+				<ul class="slider1">
+					<li><img src="img/slider/slider1.jpg" alt="fondo slider 1"></li>
+					<li><img src="img/slider/slider2.jpg" alt="fondo slider 2"></li>
+					<li><img src="img/slider/slider3.jpg" alt="fondo slider 3"></li>
+				</ul>
+			</section>
+		</div>
+		
+		
+		
+	</div>
+
+
+	<!--SCRIPT PARA MOSTRAR EL SLIDER-->
+	<!-- paso 2: -->
+	<script>
+		//al cargar este documento
+		$(document).ready(function() {
+			//ejecuta esta funcion
+			//a traves del metodo bxslider vamos a darle una propiedad
+			$('.slider1').bxSlider({
+				mode: 'fade'
+			})
+			$('.slider2').bxSlider({
+				mode: 'fade'
+			})
+			$('.slider3').bxSlider({
+				mode: 'fade'
+			})
+		});
+	</script>
+
 </body>
+
 </html>
